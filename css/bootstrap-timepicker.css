@@ -8,6 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
+ .no-margin {
+  margin: 0;
+ }
 .bootstrap-timepicker {
   width:130px;
 }
@@ -111,12 +114,19 @@
 .bootstrap-timepicker-widget .modal-content {
   padding: 4px;
 }
-@media (min-width: 767px) {
-  .bootstrap-timepicker-widget.modal {
-    width: 200px;
-    margin-left: -100px;
-  }
+.bootstrap-timepicker-widget .modal-dialog {
+  width: 200px;
+  padding-left: 0;
+  padding-right: 0;
 }
+.bootstrap-timepicker-widget .modal-body {
+  padding: 0;
+}
+.bootstrap-timepicker-widget .modal-footer {
+  margin: 0;
+}
+
+
 @media (max-width: 767px) {
   .bootstrap-timepicker {
     width: 100%;
